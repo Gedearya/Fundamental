@@ -1,0 +1,21 @@
+<form id="form">
+  Masukkan angka 1 :
+  <p><input type="number" id="angka1" /></p>
+  Masukkan angka 2 :
+  <p><input type="number" id="angka2" /></p>
+</form>
+<button onclick="fungsiKu()">Pangkatkan!</button>
+<p id="tes">Hasil</p>
+
+<script>
+  function fungsiKu() {
+    let a = document.getElementById("angka1").value;
+    let b = document.getElementById("angka2").value;
+    let c = Math.pow(a, b);
+    let pangkat = b.sup();
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + pangkat + " = " + c)
+    );
+  }
+</script>

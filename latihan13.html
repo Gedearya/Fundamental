@@ -1,0 +1,17 @@
+<form id="form">
+    Masukkan angka 1 :
+    <p><input type="number" id="angka1" /></p>
+    Masukkan angka 2 :
+    <p><input type="number" id="angka2" /></p>
+  </form>
+  <button onclick="fungsiKu()">Pangkatkan!</button>
+  <p id="hasil">Hasil</p>
+  
+  <script>
+      function fungsiKu() {
+        let number = document.getElementById("angka1").value;
+        let number2 = document.getElementById("angka2").value;
+        let pangkat = number2.sup();
+        document.getElementById("hasil").innerHTML = "Hasil" + ' ' + `${number}${pangkat}` + " = " + (Math.pow(number,number2));
+      }
+    </script>

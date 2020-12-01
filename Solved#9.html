@@ -1,0 +1,73 @@
+<h1>Kalkulator Sederhana</h1>
+
+<form id="form">
+  Masukkan angka 1 :
+  <p><input type="number" id="angka1" /></p>
+  Masukkan angka 2 :
+  <p><input type="number" id="angka2" /></p>
+</form>
+<button onclick="fungsiKu()">Kali X</button>
+<button onclick="fungsiKu2()">Bagi :</button>
+<button onclick="fungsiKu3()">Tambah +</button>
+<button onclick="fungsiKu4()">Kurang -</button>
+<button onclick="fungsiKu5()">Modulus %</button>
+<button onclick="fungsiKu6()">Pangkat ^</button>
+<p id="tes">Hasil</p>
+
+<script>
+  function fungsiKu() {
+    let a = document.getElementById("angka1").value;
+    let b = document.getElementById("angka2").value;
+    let c = a * b;
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + " " + "X" + " " + b + " = " + c)
+    );
+  }
+  function fungsiKu2() {
+    let a = document.getElementById("angka1").value;
+    let b = document.getElementById("angka2").value;
+    let c = a / b;
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + " " + ":" + " " + b + " = " + c)
+    );
+  }
+  function fungsiKu3() {
+    let a = document.getElementById("angka1").value;
+    let b = document.getElementById("angka2").value;
+    let c = parseInt(a) + parseInt(b);
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + " " + "+" + " " + b + " = " + c)
+    );
+  }
+  function fungsiKu4() {
+    let a = document.getElementById("angka1").value;
+    let b = document.getElementById("angka2").value;
+    let c = a - b;
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + " " + "-" + " " + b + " = " + c)
+    );
+  }
+  function fungsiKu5() {
+    let a = document.getElementById("angka1").value;
+    let b = document.getElementById("angka2").value;
+    let c = a % b;
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + " " + "%" + " " + b + " = " + c)
+    );
+  }
+  function fungsiKu6() {
+    let a = document.getElementById("angka1").value;
+    let b = document.getElementById("angka2").value;
+    let c = Math.pow(a, b);
+    let pangkat = b.sup();
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + pangkat + " = " + c)
+    );
+  }
+</script>

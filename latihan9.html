@@ -1,0 +1,61 @@
+<form id="form">
+    <p>
+        <b>1. Siapakah Presiden Ketiga Republik Indonesia?</b>
+    </p>
+    <input
+          type="radio"
+          name="pertanyaan1"
+          onclick="jawaban1(this.value)"
+          value="Prof.B.J Habibie"
+        />
+        <b><i>Prof.B.J Habibie</i></b>
+    <input
+          type="radio"
+          name="pertanyaan1"
+          onclick="jawaban1(this.value)"
+          value="Abdurrahman Wahid"
+        />
+        Abdurrahman Wahid
+    <input
+          type="radio"
+          name="pertanyaan1"
+          onclick="jawaban1(this.value)"
+          value="Ir. Soekarno"
+        />
+        Ir. Soekarno
+    <input
+          type="radio"
+          name="pertanyaan1"
+          onclick="jawaban1(this.value)"
+          value="Joko Widodo"
+        />
+        Joko Widodo
+    </p>
+</form>
+
+<button id="klikini" onclick="jawaban2(this.value)">
+    SUBMIT
+  </button>
+  </p>
+  <p id="output">Hasil</p>
+
+  <script>
+     function jawaban1(x) {
+    document.getElementById("klikini").value = x;
+    // }
+    // function jawaban(soal) {
+    // let nilai = 0;
+    // for (var i = 0; i < soal.length; i++) {
+    //   if (soal[i] == "Prof.B.J Habibie") nilai = +25;
+    //   else nilai = +0;
+    // }
+    function jawaban2(y) {
+    console.log(document.getElementById("output").innerHTML = 'Nilai Anda' + y)
+    // (`Nilai Anda: ${nilai}`);
+  }
+  
+}
+    // let jwb1 = (document.getElementById("form").elements[0].value)
+//   jawaban([(document.getElementById("form").elements[0].value)]);
+
+          </script>

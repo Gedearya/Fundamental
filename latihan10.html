@@ -1,0 +1,44 @@
+<form id="form">
+  <p>
+    Sex:
+    <input
+      type="radio"
+      name="sex"
+      onclick="fungsiKu1(this.value)"
+      value="Pria"
+    />
+    Pria
+    <input
+      type="radio"
+      name="sex"
+      onclick="fungsiKu1(this.value)"
+      value="Wanita"
+    />
+    Wanita
+  </p>
+</form>
+
+<button id="klikini" onclick="fungsiKu2(this.value)">Coba klik!</button>
+<p id="output">Hasil</p>
+
+<script>
+  function jawaban(soal) {
+    let nilai = 0;
+    for (var i = 0; i < soal.length; i++) {
+      if (soal[i] == "up") nilai = +25;
+      if (soal[i] == "ep") nilai = +50;
+      else nilai = +0;
+    }
+    console.log(`saat ini berada di level: ${nilai}`);
+  }
+
+  jawaban(["up", "ap", "ep"]);
+
+  function cekjawaban(){
+    if(document.getElementById("form").elements[0].value == 'Benar'){
+    console.log(document.getElementById("output").innerHTML="jawban anda benar");
+    }else{
+    console.log(document.getElementById("output").innerHTML="jawban anda salah");
+    }
+}
+</script>

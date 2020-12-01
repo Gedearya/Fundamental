@@ -1,0 +1,158 @@
+<form id="form">
+  <p>
+      <b>1. Siapakah Presiden Ketiga Republik Indonesia?</b>
+  </p>
+  <input
+        type="radio"
+        name="pertanyaan1"
+        onclick="fungsiKu1(this.value)"
+        value="Prof.B.J Habibie"
+      />
+      <b><i>Prof.B.J Habibie</i></b>
+  <input
+        type="radio"
+        name="pertanyaan1"
+        onclick="fungsiKu1(this.value)"
+        value="Abdurrahman Wahid"
+      />
+      Abdurrahman Wahid
+  <input
+        type="radio"
+        name="pertanyaan1"
+        onclick="fungsiKu1(this.value)"
+        value="Ir. Soekarno"
+      />
+      Ir. Soekarno
+  <input
+        type="radio"
+        name="pertanyaan1"
+        onclick="fungsiKu1(this.value)"
+        value="Joko Widodo"
+      />
+      Joko Widodo
+  </p>
+
+  <p>
+      <b>2. Berikut adalah nama-nama Bahasa pemrograman, kecuali…</b>
+  </p>
+  <input
+        type="radio"
+        name="pertanyaan2"
+        onclick="fungsiKu1(this.value)"
+        value="Python"
+      />
+      Python
+  <input
+        type="radio"
+        name="pertanyaan2"
+        onclick="fungsiKu1(this.value)"
+        value="Micro:bit"
+      />
+      <b><i>Micro:bit</i></b>
+  <input
+        type="radio"
+        name="pertanyaan2"
+        onclick="fungsiKu1(this.value)"
+        value="JavaScript"
+      />
+      JavaScript
+  <input
+        type="radio"
+        name="pertanyaan2"
+        onclick="fungsiKu1(this.value)"
+        value="HTML"
+      />
+      HTML
+  </p>
+
+  <p>
+      <b>3. Apa judul lagu yang diduga diplagiat oleh lagu ‘Sayang’ Via Vallen?</b>
+  </p>
+  <input
+        type="radio"
+        name="pertanyaan3"
+        onclick="fungsiKu1(this.value)"
+        value="Qing Fei De Yi"
+      />
+      Qing Fei De Yi
+  <input
+        type="radio"
+        name="pertanyaan3"
+        onclick="fungsiKu1(this.value)"
+        value="Ting Hai"
+      />
+      Ting Hai
+  <input
+        type="radio"
+        name="pertanyaan3"
+        onclick="fungsiKu1(this.value)"
+        value="Mirai E Kiroro"
+      />
+      <b><i>Mirai E Kiroro</i></b>
+  <input
+        type="radio"
+        name="pertanyaan3"
+        onclick="fungsiKu1(this.value)"
+        value="Han Siang Hau Siang"
+      />
+      Han Siang Hau Siang
+  </p>
+
+  <p>
+      <b>4. Siapakah sosok di balik topeng Batman?</b>
+  </p>
+  <input
+        type="radio"
+        name="pertanyaan4"
+        onclick="fungsiKu1(this.value)"
+        value="Natasha Romanov"
+      />
+      Natasha Romanov
+  <input
+        type="radio"
+        name="pertanyaan4"
+        onclick="fungsiKu1(this.value)"
+        value="Peter Parker"
+      />
+      Peter Parker
+  <input
+        type="radio"
+        name="pertanyaan4"
+        onclick="fungsiKu1(this.value)"
+        value="Tony Stark"
+      />
+      Tony Stark
+  <input
+        type="radio"
+        name="pertanyaan4"
+        onclick="fungsiKu1(this.value)"
+        value="Bruce Wayne"
+      />
+      <b><i>Bruce Wayne</i></b>
+  </p>
+
+  </form>
+
+  <button id="klikini" onclick="fungsiKu2(this.value)">
+      SUBMIT
+    </button>
+    <p id="output">Hasil</p>
+
+
+    <script>
+      var arr = [];
+    function fungsiKu1(x1) {
+    document.getElementById("klikini").value = arr.push(x1);
+  }
+  function fungsiKu2() {
+      var nilai = 0;
+      if (arr[0] == "Prof.B.J Habibie") nilai +=25;
+
+      if (arr[1] == "Micro:bit")        nilai +=25;
+      if (arr[2] == "Mirai E Kiroro")   nilai += 25;
+      if (arr[3] == "Bruce Wayne")      nilai += 25;
+    
+      (document.getElementById("output").innerHTML = "Nilai Akhir Anda : "+ nilai +"/ 100 " );
+  }
+
+      </script>

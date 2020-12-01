@@ -1,0 +1,18 @@
+<form id="form">
+  Masukkan angka:
+  <p><input type="number" id="angka"/></p>
+</form>
+<button onclick="fungsiKu()">Kuadratkan!</button>
+<p id="tes">Hasil</p>
+
+<script>
+  function fungsiKu() {
+    let a = document.getElementById("angka").value;
+    let b = a * a;
+    let pangkat = "2".sup();
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Hasil" + " " + a + pangkat + " = " + b)
+    );
+  }
+</script>

@@ -1,0 +1,29 @@
+<form id="form">
+  Ketik Kalimat:
+  <p><input type="text" id="kalimat" /></p>
+  Karakter yang dicari:
+  <p><input type="text" id="cari" /></p>
+</form>
+<button onclick="fungsiKu()">Cari!</button>
+<p id="tes">Hasil</p>
+
+<script>
+  function fungsiKu() {
+    let a = document.getElementById("kalimat").value;
+    let b = document.getElementById("cari").value;
+    let c = a.split(b);
+    console.log(
+      (document.getElementById("tes").innerHTML =
+        "Jumlah" +
+        " " +
+        "'" +
+        b +
+        "'" +
+        " " +
+        "sebanyak" +
+        " " +
+        (c.length - 1) +
+        " buah")
+    );
+  }
+</script>

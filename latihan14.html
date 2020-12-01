@@ -1,0 +1,39 @@
+<head>
+  <style>
+      .welcomeText {
+          display: inline;
+          font-style: italic;
+          color: #cc5656;
+      }
+
+      .colorH1 {
+          display: inline;
+          color: #6e1e1e;
+      }
+  </style>
+</head>
+
+
+<p>First Name</p> <input type="text" name="" id="insertFirstName"></p>
+<p>Last Name</p> <input type="text" name="" id="insertLastName"></p>
+<p><input type="button" value="Send" onclick="sendName()"></p>
+<br>
+
+
+<h1 class="welcomeText" id="welcome"></h1>
+<h1 class="colorH1" id="output"></h1>
+
+
+<script>
+  function sendName() {
+
+      function orang(x, y) {
+          this.Name = x + " " + y;
+      }
+
+      let fullName = new orang((document.getElementById("insertFirstName").value), (document.getElementById("insertLastName").value));
+      console.log(fullName);
+
+      document.getElementById("welcome").innerHTML = "Welcome back, "; document.getElementById("output").innerHTML = fullName.Name;
+  } 
+</script>

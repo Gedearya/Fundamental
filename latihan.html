@@ -1,0 +1,24 @@
+<form id="form">
+    <p>Name: <input type="text">
+    <p>Age: <input type="number">
+    <p id="tes"> Sex:
+    <input type="radio" name="sex" onclick="fungsiKu1(this.value)" value="Pria"> Pria
+    <input type="radio" name="sex" onclick="fungsiKu1(this.value)" value="Wanita"> Wanita
+    <p id="output"></p>
+    </form>
+    <button id="klikini" onclick="fungsiKu2(this.value)"> Coba klik! </button>
+
+    
+    <script>
+    function fungsiKu2() {
+    let input1 = document.getElementById("form").elements[0].value; 
+    let input2 = document.getElementById("form").elements[1].value;
+    console.log(document.getElementById("output").innerHTML = 'Name:' + ' ' + input1 + ' ' + 'Age:'+ ' ' + input2);}
+  
+    function fungsiKu1(x) {
+    document.getElementById("klikini").value = x}
+    function fungsiKu2(y) {
+    console.log(document.getElementById("output").innerHTML = y)}
+
+    </script>
+    
